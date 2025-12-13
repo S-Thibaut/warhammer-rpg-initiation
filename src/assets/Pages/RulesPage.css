@@ -1,0 +1,67 @@
+.Rule1 {
+    display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	text-align: justify;
+}
+
+.Competences {
+	display: flex;
+	justify-content: center;
+    width: 95%;
+	gap: 5%;
+}
+
+.caracteristiques {
+    width: 80%;
+}
+
+.image1 {
+	width: 100%;
+	display: flex;	
+	img {
+		width: 45%;
+		border-radius: 25px;
+		margin-left: 5%;
+	}
+}
+.image2 {
+	width: 100%;
+	display: flex;	
+	img {
+		width: 45%;
+		border-radius: 25px;
+		margin-left: 5%;
+	}
+}
+.image3 {
+	width: 100%;
+	display: flex;	
+	img {
+		width: 45%;
+		border-radius: 25px;
+		margin-right: 5%;
+	}
+}
+.image4 {
+	width: 100%;
+	display: flex;	
+	img {
+		width: 45%;
+		border-radius: 25px;
+		margin-left: 5%;
+	}
+}
+
+.image5 {
+	width: 100%;
+	display: flex;	
+	img {
+		width: 45%;
+		border-radius: 25px;
+		margin-right: 5%;
+	}
+}

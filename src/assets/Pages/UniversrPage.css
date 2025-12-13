@@ -1,0 +1,129 @@
+.vieux-monde {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	text-align: justify;
+}
+
+.vieux-monde-2 {
+	width: 90%;
+	border-radius: 50%;
+	box-shadow: 0 0 200px rgba(255, 255, 200, 0.3);
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.vieux-monde-5 {
+	width: 90%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	gap: 10%;
+	display: flex;
+		img {
+		width: 50%;
+		border-radius: 25px;
+	}
+}
+
+.Empire {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	text-align: justify;
+}
+
+.Empire-2 {
+	width: 100%;
+}
+
+.Empire-4 {
+	display: flex;
+	
+	margin-bottom:10% ;
+
+	img {
+		border-radius: 25px;
+		margin-left: 5%;
+	}
+}
+
+.Reikland {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	text-align: justify;
+}
+
+.Reikland-2 {
+	width: 90%;
+}
+
+.Reikland-5 {
+	width: 90%;
+	border-radius: 25px;
+}
+
+.Duché-Ubersreik {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	text-align: justify;
+}
+
+.Duché-Ubersreik-2 {
+	width: 90%;
+	border-radius: 25px;
+}
+
+.Duché-Ubersreik-5 {
+	width: 90%;
+	border-radius: 25px;
+}
+
+.Ubersreik {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	text-align: justify;
+}
+
+.Ubersreik-2 {
+	width: 90%;
+	border-radius: 25px;
+}
+
+.Ubersreik-5 {
+	width: 90%;
+	border-radius: 25px;
+}
+
+.Conclusion {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	text-align: justify;
+}
+
+.Conclusion-4 {
+	width: 90%;
+	border-radius: 25px;
+	margin-bottom: 5%;
+}
+

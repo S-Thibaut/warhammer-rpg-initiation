@@ -1,0 +1,38 @@
+.dangers {
+    display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	text-align: justify;
+}
+
+.spider,
+.wolfs ,
+.rats ,
+.giant ,
+.squig ,
+.troll ,
+.greenskin,
+.undead,
+.chaos ,
+.skaven  {
+    display: flex;
+}
+
+.spider img,
+.wolfs img,
+.rats img,
+.giant img,
+.squig img,
+.troll img,
+.greenskin img,
+.undead img,
+.chaos img,
+.skaven img {
+    width: 50%;
+    margin-left: 5%;
+    border-radius: 25px;
+}
+

@@ -1,0 +1,39 @@
+.Gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #1e1e1e;
+}
+
+.StyleCharacter {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    width: 300px;
+    border: 2px solid #444;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.StyleCharacter:hover {
+    transform: scale(1.05);
+}
+
+.StyleCharacter img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.StyleCharacter figcaption {
+    padding: 1rem;
+    text-align: left;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    color: #333;
+}
+
