@@ -1,75 +1,29 @@
-# React + TypeScript + Vite
+🎲 Warhammer Fantasy V4 — Plateforme d’Initiation
+Ce projet personnel présente l’univers de Warhammer Fantasy à travers sa version jeu de rôle (V4). Il a pour objectif de faciliter l’initiation de nouveaux joueurs grâce à :
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ - une présentation synthétique de l’univers,
 
-Currently, two official plugins are available:
+ - un aperçu des dangers majeurs du Vieux Monde,
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ - un carrousel interactif proposant des personnages pré‑tirés,
 
-## React Compiler
+ - une interface immersive pensée pour guider les débutants.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+🚀 Version 1.0 — Point de départ
+Cette version 1.0 constitue la base du projet. Elle pose les fondations d’une plateforme évolutive, destinée à s’enrichir au fil du temps.
+Les améliorations envisagées incluent :
 
-Note: This will impact Vite dev & build performances.
+ - intégration de dés dynamiques,
 
-## Expanding the ESLint configuration
+ - ajout des races jouables et non jouables,
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ - présentation des cultes, factions et cultures,
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+ - système de création et gestion de groupes,
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+ - réservation de dates via un calendrier interactif.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📌 À propos du développement
+Ce projet est réalisé en parallèle de ma formation de développeur web. Il s’agit d’un exercice personnel visant à approfondir mes compétences, explorer des mécaniques interactives et proposer un outil utile pour mes futures parties.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Le README sera mis à jour au fur et à mesure de l’avancement du projet.
