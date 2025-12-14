@@ -7,8 +7,6 @@ import livre from "./../img/Others/book.jpg";
 import paper from "./../img/Others/paper.jpg"
 import StickyToc from "../components/Navigation/StickyToc";
 import ScrollToTopButton from "../components/Navigation/ScrollToTopButton";
-import ChapterNavigation from "../components/Navigation/ChapterNavigation";
-
 
 export const Rules = () => {
 
@@ -218,7 +216,7 @@ export const Rules = () => {
 				sent plutôt à l’aise avec un pistolet en main. S’il devait tirer avec
 				son arme (<em>Projectile — Poudre noire</em>), il utiliserait sa{" "}
 				<strong>CT 30</strong> ainsi que
-				<strong>+10 d’Augmentations</strong> acquises grâce à son entraînement.
+				<strong> +10 d’Augmentations</strong> acquises grâce à son entraînement.
 				De plus, Alphonse a récemment “trouvé” un pistolet d’excellente facture,
 				lui apportant un <strong>bonus supplémentaire de +20</strong>.{" "}
 			<p/>
@@ -327,15 +325,15 @@ export const Rules = () => {
 				<strong> Esquiver</strong> (compétence de base), soit répondre avec ses
 				poings (compétence de mêlée – bagarre). Dans les deux cas, les jets
 				deviennent un
-				<strong>test opposé</strong>.
+				<strong> test opposé</strong>.
 			<p/>
 
 			
 				Les deux personnages lancent leurs dés et comparent leurs
 				<strong> Degrés de Réussite (DR)</strong>. Celui qui possède le plus de
 				DR remporte l’action. Par exemple, si le garde du corps obtient
-				<strong>1 DR</strong> et qu’Alphonse réalise un meilleur jet lui donnant
-				<strong>2 DR</strong>, il parvient à éviter le coup. C’est ensuite à son
+				<strong> 1 DR</strong> et qu’Alphonse réalise un meilleur jet lui donnant
+				<strong> 2 DR</strong>, il parvient à éviter le coup. C’est ensuite à son
 				tour d’agir. Le combat se poursuit ainsi, tour après tour, jusqu’à sa
 				résolution.
 			</p>

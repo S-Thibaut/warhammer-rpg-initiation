@@ -13,7 +13,6 @@ import Skaven from "../img/Others/Skaven.jpg";
 import BackGround12 from "../img/others/Background12.png"
 import StickyToc from "../components/Navigation/StickyToc";
 import ScrollToTopButton from "../components/Navigation/ScrollToTopButton";
-import ChapterNavigation from "../components/Navigation/ChapterNavigation";
 
 export const Dangers = () => {
 		

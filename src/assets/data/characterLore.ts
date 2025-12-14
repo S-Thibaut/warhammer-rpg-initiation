@@ -1,24 +1,34 @@
-
 export const characterlore: Record<number, string> = {
+	0: `
+Bienvenue dans Warhammer Fantasy – le Jeu de Rôle. Des aventures 
+extraordinaires vous attendent. L’un d’entre vous incarnera le 
+Maître du Jeu, gardien d’un univers entier, tandis que les autres 
+y vivront, l’exploreront et y découvriront autant de merveilles 
+oubliées que d’horreurs indicibles.
 
-0:`*Que venez vous donc chercher ici ? De l'aventure ? Sans doute, de l'or ? 
- Probablement. La justice ?*
+Avant de vous lancer, il vous est demandé de prendre connaissance 
+des informations générales présentes sur ce site. Une fois que vous 
+êtes certain que l’univers vous intéresse, vous pourrez composer un 
+groupe jusqu’à six aventuriers.
 
- *Enfin tout est relatif ! Est-ce une piece lueur que je perçois dans vos yeux ?
- Oh, vous voulez ce qui est juste. Tant que c'est asser payé, divertissant et que 
- cela correspond à vos opinions politiques. Et bien, ça me va, entre et nous 
- parlerons boulot.*
+Chaque joueur choisira l’un des douze profils proposés. Il ne vous 
+restera ensuite qu’à trouver une date commune et à la soumettre au 
+Maître du Jeu.
 
-Bienvenu dans Warhammer Fantasy le Jeu de Rôle. Des aventures extraordinaires vous 
-y attendent. Un membre de votre groupe contrôlera un univers entier, pendant que les 
-autres y vivront et l'exploront, découvrant de comptueuses merveilles, les plus 
-infâmes des ténèbres et tout ce qui les sépare. 
+Prévoyez environ trois heures par session. Les parties pourront avoir 
+lieu en soirée de semaine ou durant le week‑end. Pour le déroulement 
+du jeu, je vous inviterai à créer un compte sur la plateforme 
+suivante : **https://roll20.net/** Pour mener à bien ce scénario d’introduction, 
+comptez trois, peut‑être quatre sessions.
 
-Mais avant que vous ne choisissiez votre rôle dans cette histoire, laissez-moi vous poser une question : ,
+Il ne vous restera plus qu’à vous installer confortablement, écouter et 
+interagir avec l’histoire qui vous sera présentée. La plupart des actions 
+sont automatisées et ne nécessitent qu’un simple clic. Ne soyez donc pas 
+inquiets : malgré son apparence, ce loisir est bien plus accessible qu’il 
+n’y paraît.
+`,
 
-Je peux vous guidez, Choisissez votre voie, et je vous présenterai ceux qui la partagent…`,
-
-1: ` # SALUNDRA VON DRAKENBERG
+	1: ` # SALUNDRA VON DRAKENBERG
 
 **Citations**
 
@@ -52,7 +62,7 @@ Salundra est le chef tout désigné du groupe avec quelques avantages significat
  - Elle a un sens aigu du bien et du mal et elle lutte pour ce qu'elle pense être bon.
 `,
 
-2: ` # ELSE SIGLOBEN
+	2: ` # ELSE SIGLOBEN
 
 **Citations**
 
@@ -85,7 +95,7 @@ Else se tire de tous les problèmes, hurlant le nom de Sigmar.
  - Un Personnage polyvalent, profond et émotionnellement complexe.
  `,
 
-3: ` # FERDINAND GRUBER
+	3: ` # FERDINAND GRUBER
 
 **Citations**
 
@@ -121,7 +131,7 @@ Vous pouvez décider de le jouer parce que :
  - LA MAGIE !
  `,
 
-4: ` # AMRIS PLUIEDEBRAISE
+	4: ` # AMRIS PLUIEDEBRAISE
 
 **Citations**
 
@@ -141,7 +151,7 @@ Ces dernières et courtes quarante années qu'il a passées à Altdorf, il a ét
 ravi des changements qui s'y sont produits. L'Empire n'est qu'une source chaotique de 
 bouleversements incessants, et Amris adore ça. 
 
-Il a conclu un marché avec Sali l'année dernière : elle l'aiderait à s'échapperde chez son 
+Il a conclu un marché avec Sali l'année dernière : elle l'aiderait à s'échapper de chez son 
 père, s'il lui donnait un coup de main pour voler une broche à un cousin à lui. Une offre 
 bien trop excitante pour la refuser. Oui, il est peut-être un fugitif. Et oui, son père 
 considère peut-être Sali comme une voleuse et un kidnappeur. Mais qu'est-ce qu'il y a de mal 
@@ -149,18 +159,17 @@ considère peut-être Sali comme une voleuse et un kidnappeur. Mais qu'est-ce qu
 
 **De quoi a-t-il l'air ?** 
 
-Jaune, naïf et extrêmement intelligent.
+Jeune, naïf et extrêmement intelligent.
 
 **Pourquoi jouer Amris ?**
 
 Amris est un elfe à l'esprit vif et au passé mystérieux.
 
  - Vous désirez incarner quelqu'un de complètement différent des autres membres du groupe.  
- - Vous aimez l'idée d'un personnage toujours capable, dépendant moins de la chance et des lancers de dés et plus de ses Compétences.  
- - Vous aimez les elfes.`,
+ - Vous aimez l'idée d'un personnage toujours capable, dépendant moins de la chance et des lancers de dés et plus de ses compétences.  
+ - Vous aimez les Elfes.`,
 
-
-5: ` # GUNNAR HROLFSSON
+	5: ` # GUNNAR HROLFSSON
 
 **Citations**
 
@@ -175,7 +184,7 @@ Amris est un elfe à l'esprit vif et au passé mystérieux.
 **Qui est Gunnar ?**
 
 Gunnar était joaillier avant qu'une tragédie ne frappe sa famille, tuant sa fille et ses deux fils. Il a prêté
-le Serment du Tueur sur le CSSMathClamp, et n'a cessé de le regretter, même s'il ne l'avouera jamais. Il cherche
+le Serment du Tueur sur le champ, et n'a cessé de le regretter, même s'il ne l'avouera jamais. Il cherche
 à présent à mourir de la façon la plus honorable possible, mais sombre régulièrement dans la mélancolie et boit 
 lorsqu'il échoue, ce qui retarde d'autant la tâche funeste qu'il doit accomplir. Il est tombé sur Salundra il y 
 a quatre ans, après une nuit de beuverie à Ubersreik ; et il apprécie vraiment ce capitaine turbulent, même si 
@@ -194,7 +203,7 @@ En colère, tourmenté et belliqueux.
  - Gunnar est sans conteste le Personnage le plus fort, mais il ne porte pas d'armure, alors il faut être prudent.  
  - Gunnar est un nain très honorable, même s'il pense avoir perdu tout honneur, ce qui le rend intéressant à jouer.`,
 
-6: ` # MOLRELLA TUILCARAMEL
+	6: ` # MOLRELLA TUILCARAMEL
 
 **Citations**
 
@@ -210,10 +219,9 @@ En colère, tourmenté et belliqueux.
 
 Élevée dans une seule pièce avec une famille tentaculaire, Molli est joyeuse, sociable, amusante et vraiment 
 dépassée par la morale humaine et ses concepts de propriété. Ce qui lui cause de sérieux ennuis. Souvent.  
-"Mais mon sourire charmeur va m'aider à m'en tirer !"  
-Prise sur le fait par Salundra, il y a quatre ans, en train de lui voler son cheval (une bien longue histoire),  
-Molli n'a plus quitté la jeune femme. Molli et Sali sont très proches.  
-Mais bon, Molli est proche de tout le monde.
+"Mais mon sourire charmeur va m'aider à m'en tirer !" Prise sur le fait par
+Salundra, il y a quatre ans, en train de lui voler son cheval (une bien longue 
+histoire), Molli n'a plus quitté la jeune femme. Molli et Sali sont très proches. Mais bon, Molli est proche de tout le monde.
 
 **De quoi a-t-elle l'air ?**
 
@@ -230,17 +238,17 @@ Vous pouvez décider de la jouer parce que :
  
  `,
 
- 7: ` # Joueur / joueuse
+	7: ` # Joueur / joueuse
 
 Citations
 
-*Ca va bien se passer !* 
+*Ça va bien se passer !* 
 
-*C'est dans les regles ?!* 
+*C'est dans les règles ?!* 
 
 *Je peux faire ça ?* 
 
-*Attend j'ai pas pris de notes, c'est qui lui ?*
+*Attends j'ai pas pris de notes, c'est qui lui ?*
 
 
 **Qui est le joueur ?**
@@ -268,13 +276,13 @@ Parce que le quotidien vous pèse. Il est lourd, il est chiant, il manque de fun
    aider dans les moments difficiles… probablement.
  
  `,
-8: ` # MARKUS KRUBER
+	8: ` # MARKUS KRUBER
 
 **Citations**
 
 *J'ai vu pire. Pas beaucoup, hein. Mais j'ai vu pire.* 
 
-*Je suis trop vieux pour ces idiotis* 
+*Je suis trop vieux pour ces idiotis.* 
 
 *Tu sais, j’étais soldat autrefois. Maintenant je chasse les rats. Une belle promotion, hein ?*
 
@@ -308,7 +316,7 @@ Il est souvent perçu comme le pilier du groupe, fiable et pragmatique, avec un 
  - Polyvalent, il saura s'en sortir dans la plupart des situations.
  
  `,
-10: ` # SIENNA FUEGONASUS
+	10: ` # SIENNA FUEGONASUS
 
 **Citations**
 
@@ -349,7 +357,7 @@ en ville en prisonnière, prête à comparaître devant les magistrats pour un c
 
 **De quoi a-t-elle l'air ?**
 
-Intense, Brulante et tres spontannée.
+Intense, brûlante et très spontannée.
 
 **Pourquoi jouer Sienna ?**
 
@@ -364,7 +372,7 @@ jouer parce que :
  chaos bienveillant.
  
  `,
-9: ` # VICTOR SALTZPYRE
+	9: ` # VICTOR SALTZPYRE
 
 **Citations**
 
@@ -405,7 +413,7 @@ Vous pourriez choisir de l’incarner parce que :
    tranchant que nécessaire.
  
  `,
-11: ` # KERILLIAN
+	11: ` # KERILLIAN
 
 **Citations**
 
@@ -446,7 +454,7 @@ Vous pouvez décider de la jouer parce que :
  - Tous les groupes ont besoin d’un œil perçant, d’une lame silencieuse… et d’un commentaire cinglant pour garder les pieds sur terre.
  
  `,
-12: ` # BARDON GORREKSON
+	12: ` # BARDIN GORREKSON
 
 **Citations**
 
@@ -491,7 +499,7 @@ Vous pouvez décider de le jouer parce que :
  de bière pour détendre l’atmosphère.
  
  `,
-13: ` # HIRONYMOUS TROGNEBOUCHE
+	13: ` # HIRONYMOUS TROGNEBOUCHE
 
 **Citations**
 
@@ -530,6 +538,4 @@ Vous pouvez décider de le jouer parce que :
  - Tous les groupes ont besoin d’un médiateur qui sait quand parler, quand écouter… et quand disparaître.
  
  `,
-
 };
-

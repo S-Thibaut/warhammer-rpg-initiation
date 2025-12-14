@@ -4,6 +4,7 @@ import type { Character } from "../data/charactereCard";
 import "./HomePage.css";
 import { characterlore } from "../data/characterLore";
 import ReactMarkdown from "react-markdown";
+import ScrollToTopButton from "../components/Navigation/ScrollToTopButton";
 
 type Props = {
 	characters: Character[];
@@ -41,8 +42,6 @@ const HomePage = ({ characters }: Props) => {
 		? characterPairs[normalizedIndex].back
 		: characterPairs[normalizedIndex].front;
 
-	console.log(characterlore[activeCharacter.id]);
-
 	useEffect(() => {
 		document.body.style.backgroundImage = `url(${activeCharacter.Background})`;
 		document.body.style.backgroundSize = "cover";
@@ -60,7 +59,11 @@ const HomePage = ({ characters }: Props) => {
 	return (
 		<div className="carousel-background">
 			<div className="carousel-wrapper">
-				<button type="button" onClick={rotateLeft} className="carousel-button left">
+				<button
+					type="button"
+					onClick={rotateLeft}
+					className="carousel-button left"
+				>
 					←
 				</button>
 
@@ -75,7 +78,7 @@ const HomePage = ({ characters }: Props) => {
 
 							return (
 								<div
-									key={i}
+									key={`${pair.front.id}-${pair.back.id}`}
 									className="carousel__face"
 									style={{
 										transform: `rotateY(${angle}deg) translateZ(250px) translateX(-6%) scale(${scale})`,
@@ -94,7 +97,11 @@ const HomePage = ({ characters }: Props) => {
 					</div>
 				</div>
 
-				<button type="button" onClick={rotateRight} className="carousel-button right">
+				<button
+					type="button"
+					onClick={rotateRight}
+					className="carousel-button right"
+				>
 					→
 				</button>
 			</div>
@@ -117,11 +124,15 @@ const HomePage = ({ characters }: Props) => {
 						li: ({ node, ...props }) => (
 							<li className="markdown-list-item" {...props} />
 						),
-            strong: ({node, ...props}) => <strong className="markdown-underline" {...props} />,
+						strong: ({ node, ...props }) => (
+							<strong className="markdown-underline" {...props} />
+						),
 					}}
 				>
 					{characterlore[activeCharacter.id]}
 				</ReactMarkdown>
+
+				<ScrollToTopButton />
 			</div>
 		</div>
 	);

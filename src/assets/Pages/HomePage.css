@@ -103,14 +103,15 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	font-family: "Cinzel", serif;
+	
 }
 
 .markdown-title {
-	font-family: "Uncial Antiqua", serif; 
 	font-size: 2.2rem;
 	color: #d4af37; 
 	text-shadow: 2px 2px 4px #000;
 	margin-bottom: 1rem;
+	
 }
 
 .markdown-subtitle {
@@ -129,7 +130,9 @@
 	line-height: 1.6;
 	color: #eee;
 	margin-bottom: 1rem;
-	
+	text-align: justify;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .markdown-list {

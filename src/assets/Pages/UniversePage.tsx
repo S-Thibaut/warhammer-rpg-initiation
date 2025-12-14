@@ -1,9 +1,7 @@
 import "./UniversrPage.css";
 import taxe from "./../img/Others/taxe.jpg";
-import { useEffect } from "react";
 import StickyToc from "../components/Navigation/StickyToc";
 import ScrollToTopButton from "../components/Navigation/ScrollToTopButton";
-// import ChapterNavigation from "../components/Navigation/ChapterNavigation";
 import InnerImageZoom from 'react-inner-image-zoom';
 import "react-inner-image-zoom/src/styles.css";
 
@@ -11,10 +9,6 @@ import "react-inner-image-zoom/src/styles.css";
 
 export const Universe = () => {
 
-	useEffect(() => {
-  document.body.classList.add("univers-body");
-  return () => document.body.classList.remove("univers-body");
-}, []);
 
 	return (
 
@@ -30,7 +24,6 @@ export const Universe = () => {
       />
 
 		<div className="univers-page">
-			<h1>l'UNIVERS DE WARHAMMER FANTASY </h1>
 			<section className="vieux-monde" >
 				<h2 id="vieuxmonde"> Le vieux monde de warhammer </h2>
 
