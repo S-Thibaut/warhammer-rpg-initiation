@@ -1,12 +1,11 @@
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router";
 
-import App from "../App";
-import {HomePage} from "../pages/HomePage";
+import App from "../../App";
+import {HomePage} from "../Pages/HomePage";
 import {Universe} from "../Pages/UniversePage";
 import {Rules} from "../Pages/RulesPage";
 import {Dangers} from "../Pages/DangersPage";
-import Calendar from "../pages/Calendar";
 
 const router = createBrowserRouter([
 	{
@@ -27,10 +26,6 @@ const router = createBrowserRouter([
 			{
 				path: "/articles/:id/Dangers",
 				element: <Dangers />,
-			},
-			{
-				path: "/articles/:id/Calendar",
-				element: <Calendar />,
 			},
 		],
 	},
