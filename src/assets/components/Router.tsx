@@ -2,10 +2,12 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router";
 
 import App from "../../App";
-import {HomePage} from "../Pages/HomePage";
+import HomePage from "../Pages/HomePage";
 import {Universe} from "../Pages/UniversePage";
 import {Rules} from "../Pages/RulesPage";
 import {Dangers} from "../Pages/DangersPage";
+
+
 
 const router = createBrowserRouter([
 	{
