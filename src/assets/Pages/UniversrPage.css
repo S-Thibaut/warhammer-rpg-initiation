@@ -1,3 +1,11 @@
+.univers-body {
+  background-image: url("/src/assets/img/background/backgroundunivers.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .vieux-monde {
 	display: flex;
 	flex-direction: column;
@@ -9,12 +17,17 @@
 }
 
 .vieux-monde-2 {
-	width: 90%;
+	width: 100%;
 	border-radius: 50%;
 	box-shadow: 0 0 200px rgba(255, 255, 200, 0.3);
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
+
+.no-hover-zoom + .inner-image-zoom__zoomed-image {
+  display: none;
+}
+
 .vieux-monde-5 {
 	width: 90%;
 	margin-top: 5%;
@@ -39,6 +52,7 @@
 
 .Empire-2 {
 	width: 100%;
+	border-radius: 25px;
 }
 
 .Empire-4 {
@@ -63,7 +77,8 @@
 }
 
 .Reikland-2 {
-	width: 90%;
+	width: 100%;
+	border-radius: 25px;
 }
 
 .Reikland-5 {
@@ -82,7 +97,7 @@
 }
 
 .Duché-Ubersreik-2 {
-	width: 90%;
+	width: 100%;
 	border-radius: 25px;
 }
 

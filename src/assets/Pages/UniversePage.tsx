@@ -1,12 +1,38 @@
 import "./UniversrPage.css";
 import taxe from "./../img/Others/taxe.jpg";
+import { useEffect } from "react";
+import StickyToc from "../components/Navigation/StickyToc";
+import ScrollToTopButton from "../components/Navigation/ScrollToTopButton";
+// import ChapterNavigation from "../components/Navigation/ChapterNavigation";
+import InnerImageZoom from 'react-inner-image-zoom';
+import "react-inner-image-zoom/src/styles.css";
+
+
 
 export const Universe = () => {
+
+	useEffect(() => {
+  document.body.classList.add("univers-body");
+  return () => document.body.classList.remove("univers-body");
+}, []);
+
 	return (
+
+		 <>
+      <StickyToc
+        items={[
+          { id: "vieuxmonde", label: "Vieux-monde" },
+          { id: "empire", label: "Empire" },
+          { id: "reikland", label: "Reikland" },
+          { id: "duché", label: "Duché d'Ubersreik" },
+          { id: "ubersreik", label: "Ubersreik" },
+        ]}
+      />
+
 		<div className="univers-page">
 			<h1>l'UNIVERS DE WARHAMMER FANTASY </h1>
-			<section className="vieux-monde">
-				<h2> Le vieux monde de warhammer </h2>
+			<section className="vieux-monde" >
+				<h2 id="vieuxmonde"> Le vieux monde de warhammer </h2>
 
 				<p className="vieux-monde-1">
 					Ce que nous appelons « Le Vieux Monde » constitue le cœur de
@@ -24,11 +50,18 @@ export const Universe = () => {
 					ci-dessous une carte de ce vaste et complexe territoire.
 				</p>
 
-				<img
-					className="vieux-monde-2"
-					src="/src/assets/img/Maps/OldWorldMap.jpg"
-					alt="Carte du vieux monde"
-				/>
+				<div className="no-hover-zoom">
+  <InnerImageZoom
+    src="/src/assets/img/Maps/OldWorldMap.jpg"
+    zoomSrc="/src/assets/img/Maps/OldWorldMap.jpg"
+    zoomType="click"
+    zoomScale={1.5}
+    zoomPreload={true}
+    hideHint={true}
+    className="vieux-monde-2"
+  />
+</div>
+
 
 				<p className="vieux-monde-3">
 					Ces grandes terres sont composées d’immenses et inquiétantes étendues
@@ -67,8 +100,8 @@ export const Universe = () => {
 				</section>
 			</section>
 
-			<section className="Empire">
-				<h2>Empire</h2>
+			<section className="Empire" >
+				<h2 id="empire">Empire</h2>
 
 				<p className="Empire-1">
 					L’Empire est le plus grand royaume humain du Vieux Monde. De
@@ -82,11 +115,18 @@ export const Universe = () => {
 					profession.
 				</p>
 
-				<img
-					className="Empire-2"
-					src="/src/assets/img/Maps/EmpireMap.png"
-					alt="Carte de l'empire"
-				/>
+				<div className="no-hover-zoom">
+  <InnerImageZoom
+    src="/src/assets/img/Maps//EmpireMap.png"
+    zoomSrc="/src/assets/img/Maps/EmpireMap.png"
+    zoomType="click"
+    zoomScale={1.5}
+    zoomPreload={true}
+    hideHint={true}
+    className="Empire-2"
+  />
+</div>
+
 
 				<p className="Empire-3">
 					Pour remonter un peu dans l’histoire, retournons 2500 ans en arrière.
@@ -124,8 +164,8 @@ export const Universe = () => {
 			</section>
 
 
-			<section className="Reikland">
-				<h2>Reikland</h2>
+			<section className="Reikland" >
+				<h2 id="reikland">Reikland</h2>
 
 				<p className="Reikland-1">
 					Le Reikland est peut-être la Province Impériale la plus riche de
@@ -139,11 +179,17 @@ export const Universe = () => {
 					de bandits.
 				</p>
 
-				<img
-					className="Reikland-2"
-					src="/src/assets/img/Maps/ReiklandMap.png"
-					alt="Carte du Reikland"
-				/>
+				<div className="no-hover-zoom">
+  <InnerImageZoom
+    src="/src/assets/img/Maps/ReiklandMap.png"
+    zoomSrc="/src/assets/img/Maps/ReiklandMap.png"
+    zoomType="click"
+    zoomScale={1.5}
+    zoomPreload={true}
+    hideHint={true}
+    className="Reikland-2"
+  />
+</div>
 
 				<p className="Reikland-3">
 					La grande cité compte un peu plus de 105 000 habitants, rayonnant dans
@@ -181,8 +227,8 @@ export const Universe = () => {
 				/>
 			</section>
 
-			<section className="Duché-Ubersreik">
-				<h2>Duché d'Ubersreik</h2>
+			<section className="Duché-Ubersreik" >
+				<h2 id="duché">Duché d'Ubersreik</h2>
 				<p className="Duché-Ubersreik-1">
 					Les différentes cités sont gérées politiquement et administrativement
 					par de grandes maisons : des familles nobles à qui l’autorité
@@ -192,11 +238,17 @@ export const Universe = () => {
 					absolument pas à cette règle.
 				</p>
 
-				<img
-					className="Duché-Ubersreik-2"
-					src="/src/assets/img/Maps/DuchéUbersreikMap.png"
-					alt="Duché d'Ubersreik"
-				/>
+				<div className="no-hover-zoom">
+  <InnerImageZoom
+    src="/src/assets/img/Maps/DuchéUbersreikMap.png"
+    zoomSrc="/src/assets/img/Maps/DuchéUbersreikMap.png"
+    zoomType="click"
+    zoomScale={1.0}
+    zoomPreload={true}
+    hideHint={true}
+    className="Reikland-2"
+  />
+</div>
 
 				<p className="Duché-Ubersreik-3">
 					Ce territoire, soigneusement découpé entre différentes sources
@@ -225,8 +277,8 @@ export const Universe = () => {
 				<img src="/src/assets/img/Others/Background 7.png" alt="Auberge" className="Duché-Ubersreik-5" />
 
 			</section>
-			<section className="Ubersreik">
-				<h2>Ubersreik</h2>
+			<section className="Ubersreik" >
+				<h2 id="ubersreik">Ubersreik</h2>
 				<p className="Ubersreik-1">
 					Ubersreik est le cœur politique du duché, gérant l’ensemble des cités,
 					villages et activités situées sur le territoire. Cette autorité était
@@ -236,11 +288,18 @@ export const Universe = () => {
 					un tiers de la population.
 				</p>
 
-				<img
-					className="Ubersreik-2"
-					src="/src/assets/img/Maps/UbersreikMap.jpg"
-					alt="Duché d'Ubersreik"
-				/>
+				<div className="no-hover-zoom">
+  <InnerImageZoom
+    src="/src/assets/img/Maps/UbersreikMap.jpg"
+    zoomSrc="/src/assets/img/Maps/UbersreikMap.jpg"
+    zoomType="click"
+    zoomScale={0.8}
+    zoomPreload={true}
+    hideHint={true}
+    className="Ubersreik-2"
+  />
+</div>
+
 				<p className="Ubersreik-3">
 					Malgré cela, leurs agissements semblent avoir fortement déplu à
 					l’Empereur lui-même. Karl Franz dépêcha un corps militaire chargé de
@@ -267,8 +326,8 @@ export const Universe = () => {
 
 			</section>
 
-			<section className="Conclusion">
-				<h2>Et maintenant ? </h2>
+			<section className="Conclusion" >
+				<h2 id="conclusion">Et maintenant ? </h2>
 				<p className="Conclusion-1">
 					C’est dans cette atmosphère tendue que vous revenez en ville après une
 					longue absence. Chacun d’entre vous a une raison de revenir :
@@ -314,5 +373,13 @@ export const Universe = () => {
 				/>
 			</section>
 		</div>
+
+		{/* <ChapterNavigation
+        previous="/page-precedente"
+        next="/page-suivante"
+      /> */}
+
+      <ScrollToTopButton />
+    </>
 	);
 };

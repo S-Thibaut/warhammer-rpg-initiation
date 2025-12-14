@@ -1,3 +1,11 @@
+.rule-body {
+  background-image: url("/src/assets/img/background/Backgroundrule.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .Rule1 {
     display: flex;
 	flex-direction: column;

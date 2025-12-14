@@ -1,13 +1,37 @@
 import "./RulesPage.css";
+import { useEffect } from "react";
 import taverne from "./../img/Others/EmpireTaverne.jpg";
 import scribe from "./../img/Others/scribe.jpg";
 import jeux from "./../img/Others/jeuxtaverne.jpg";
 import livre from "./../img/Others/book.jpg";
 import paper from "./../img/Others/paper.jpg"
+import StickyToc from "../components/Navigation/StickyToc";
+import ScrollToTopButton from "../components/Navigation/ScrollToTopButton";
+import ChapterNavigation from "../components/Navigation/ChapterNavigation";
 
 
 export const Rules = () => {
+
+		useEffect(() => {
+	  document.body.classList.add("rule-body");
+	  return () => document.body.classList.remove("rule-body");
+	}, []);
+
 	return (
+
+			 <>
+			  <StickyToc
+				items={[
+				  { id: "carac", label: "Caractéristiques" },
+				  { id: "comp", label: "Compétences" },
+				  { id: "dr", label: "DR et critiques" },
+				  { id: "opp", label: "Tests Opposés" },
+				  
+				]}
+			  />
+		
+
+
 		<div className="Rule1">
 			<h1>Comment jouer ?</h1>
 
@@ -54,7 +78,7 @@ export const Rules = () => {
 				flou, ne vous inquiétez pas : je vais tout illustrer par des exemples et
 				des démonstrations.
 			</p>
-			<h2>Les CARACTÉRISTIQUES</h2>
+			<h2 id="carac">Les CARACTÉRISTIQUES</h2>
 			<p>
 				Les caractéristiques représentent ce qu’est un personnage sur le plan
 				physique, mental et intellectuel.
@@ -147,7 +171,7 @@ export const Rules = () => {
 	
 		</section>
 
-			<h2>Les COMPÉTENCES</h2>
+			<h2 id="comp">Les COMPÉTENCES</h2>
 			<p>
 				{" "}
 				Les compétences représentent ce que votre personnage sait faire de
@@ -217,7 +241,7 @@ export const Rules = () => {
 				</strong>
 				.
 			</p>
-			<h2>Les degrés de réussite (DR), critiques et maladresses </h2>
+			<h2 id="dr">Les degrés de réussite (DR), critiques et maladresses </h2>
 			<p>
 				Vous avez maintenant compris que chaque action repose sur une
 				caractéristique ou une compétence, un jet de dés et un seuil à
@@ -271,7 +295,7 @@ export const Rules = () => {
 				commettez une maladresse aux conséquences spectaculaires.
 			</p>
 
-			<h2>Les Tests opposés</h2>
+			<h2 id="opp">Les Tests opposés</h2>
 
 			<p>
 				Les tests opposés sont utilisés lorsque deux personnages s’affrontent
@@ -338,5 +362,8 @@ export const Rules = () => {
 			</p>
 			<p>Alors respirez, lancez vos dés… et bienvenue dans l’aventure !</p>
 		</div>
+		<ScrollToTopButton />
+			</>
+		
 	);
 };

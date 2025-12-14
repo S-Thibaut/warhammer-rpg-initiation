@@ -1,0 +1,30 @@
+.chapter-nav {
+  background: url("/textures/dark-metal.jpg");
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  border-top: 3px solid #d9d1d1;
+  box-shadow: 0 -4px 8px rgba(0,0,0,0.4);
+}
+
+.chapter-nav a {
+  font-family: "Cinzel", serif;
+  color: #ffffff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.chapter-nav a:hover {
+  color: white;
+  text-shadow: 0 0 6px #5a0000;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .chapter-nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}

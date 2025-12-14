@@ -1,4 +1,5 @@
 import "./DangersPage.css";
+import { useEffect } from "react";
 import GiantSpider from "../img/Others/GiantSpider.jpg";
 import GiantWolfs from "../img/Others/GiantWolfs.jpg";
 import GiantRats from "../img/Others/GiantRat.jpg";
@@ -10,9 +11,31 @@ import Undead from "../img/Others/Undead.jpg";
 import Chaos from "../img/Others/Chaos.jpg";
 import Skaven from "../img/Others/Skaven.jpg";
 import BackGround12 from "../img/others/Background12.png"
+import StickyToc from "../components/Navigation/StickyToc";
+import ScrollToTopButton from "../components/Navigation/ScrollToTopButton";
+import ChapterNavigation from "../components/Navigation/ChapterNavigation";
 
 export const Dangers = () => {
+		
+		useEffect(() => {
+		  document.body.classList.add("danger-body");
+		  return () => document.body.classList.remove("danger-body");
+		}, []);
+
 	return (
+
+			 <>
+			  <StickyToc
+				items={[
+				  { id: "betes", label: "Bêtes du Reikland" },
+				  { id: "grossesbetes", label: "Bêtes monstrueuses" },
+				  { id: "orcs", label: "Peaux-vertes" },
+				  { id: "vampires", label: "Morts-vivants" },
+				  { id: "chaos", label: "Le Chaos" },
+				  { id: "skaven", label: "Les Skavens" },
+				]}
+			  />
+		
 		<div className="dangers">
 			
 			<h1> Les Dangers du monde</h1>
@@ -25,7 +48,7 @@ export const Dangers = () => {
 				les chevaux ou les chiens — seront volontairement ignorés.
 			</p>
 
-			<h2> Les bêtes du Reikland </h2>
+			<h2 id="betes"> Les bêtes du Reikland </h2>
 
 			<h3>Araignée Géante</h3>
 
@@ -75,7 +98,7 @@ export const Dangers = () => {
 
 			</section>
 
-			<h2>Les bêtes monstrueuses du Reikland</h2>
+			<h2 id="grossesbetes">Les bêtes monstrueuses du Reikland</h2>
 
 			<h3>Géant</h3>
 
@@ -123,7 +146,7 @@ export const Dangers = () => {
 
 			</section>
 
-			<h2>Les hordes de peaux-vertes</h2>
+			<h2 id="orcs">Les hordes de peaux-vertes</h2>
 
 			<section className="greenskin">
 
@@ -139,7 +162,7 @@ export const Dangers = () => {
 
 			</section>
 
-			<h2>Les morts sans repos</h2>
+			<h2 id="vampires">Les morts sans repos</h2>
 
 			<section className="undead">
 
@@ -155,7 +178,7 @@ export const Dangers = () => {
 
 			</section>
 
-			<h2>Esclaves des ténèbres</h2>
+			<h2 id="chaos">Esclaves des ténèbres</h2>
 
 			<section className="chaos">
 
@@ -173,7 +196,7 @@ export const Dangers = () => {
 			</section>
 
 			
-			<h2>Les ignobles hommes-rats</h2>
+			<h2 id="skaven">Les ignobles hommes-rats</h2>
 
 			<section className="skaven">
 
@@ -206,5 +229,8 @@ export const Dangers = () => {
 			</section>
 			<img className="ratiers" src={BackGround12} alt="Combat d'egoutier contre des skavens" />
 		</div>
+
+		<ScrollToTopButton />
+			</>
 	);
 };

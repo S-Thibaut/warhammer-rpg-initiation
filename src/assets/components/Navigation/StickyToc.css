@@ -1,0 +1,40 @@
+.sticky-toc {
+  margin-top: 2%;
+  top: 0;
+  z-index: 2000;
+  background: url("/textures/parchment.jpg");
+  background-size: cover;
+  background-color: light dark;
+}
+
+.toc-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* ✅ centre horizontalement */
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+.sticky-toc a {
+  font-family: "Cinzel", serif;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+  font-size: 1.6rem;
+  background-color: rgba(20, 20, 20, 0.6); 
+}
+
+.sticky-toc a:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 12px 6px rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .toc-inner {
+    justify-content: center;
+  }
+}
