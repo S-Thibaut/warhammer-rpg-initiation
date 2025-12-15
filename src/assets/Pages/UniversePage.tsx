@@ -8,7 +8,7 @@ import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/src/styles.css";
 
 // ✅ Background importé proprement
-import backgroundUnivers from "../img/background/backgroundunivers.png";
+import backgroundUnivers from "../img/Background/backgroundunivers.png";
 
 export const Universe = () => {
 
