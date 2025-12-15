@@ -1,5 +1,5 @@
 .rule-body {
-  background-image: url("/src/assets/img/background/Backgroundrule.png");
+  background-image: url("../img/background/Backgroundrule.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

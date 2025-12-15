@@ -1,10 +1,16 @@
 import "./RulesPage.css";
 import { useEffect } from "react";
-import taverne from "./../img/Others/EmpireTaverne.jpg";
-import scribe from "./../img/Others/scribe.jpg";
-import jeux from "./../img/Others/jeuxtaverne.jpg";
-import livre from "./../img/Others/book.jpg";
-import paper from "./../img/Others/paper.jpg";
+
+import taverne from "../img/Others/EmpireTaverne.jpg";
+import scribe from "../img/Others/scribe.jpg";
+import jeux from "../img/Others/jeuxtaverne.jpg";
+import livre from "../img/Others/book.jpg";
+import paper from "../img/Others/paper.jpg";
+
+import caracteristiques from "../img/Others/Caracteristiques.png";
+import competences1 from "../img/Others/competences1.png";
+import competences2 from "../img/Others/competences2.png";
+
 import StickyToc from "../components/Navigation/StickyToc";
 import ScrollToTopButton from "../components/Navigation/ScrollToTopButton";
 
@@ -77,9 +83,9 @@ export const Rules = () => {
 				</p>
 
 				<img
-					className="caracteristiques"
-					src="/src/assets/img/Others/Caracteristiques.png"
-					alt="Tableau des caractéristiques"
+					 className="caracteristiques"
+                    src={caracteristiques}
+                    alt="Tableau des caractéristiques"
 				/>
 				<p>
 					Voici celles de votre personnage. Dans cet exemple, toutes les valeurs
@@ -183,15 +189,10 @@ export const Rules = () => {
 				</p>
 
 				<section className="Competences">
-					<img
-						src="/src/assets/img/Others/compétences1.png"
-						alt="Tableau des compétences1"
-					/>
-					<img
-						src="/src/assets/img/Others/compétences2.png"
-						alt="Tableau des compétences2"
-					/>
+				 <img src={competences1} alt="Tableau des compétences 1" />
+                    <img src={competences2} alt="Tableau des compétences 2" />
 				</section>
+
 				<p>
 					Comme vous pouvez le constater, il existe plusieurs tableaux de
 					compétences, mais

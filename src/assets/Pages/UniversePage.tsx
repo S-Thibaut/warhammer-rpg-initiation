@@ -1,14 +1,28 @@
 import { useEffect } from "react";
 import "./UniversePage.css";
 
-import taxe from "./../img/Others/taxe.jpg";
 import StickyToc from "../components/Navigation/StickyToc";
 import ScrollToTopButton from "../components/Navigation/ScrollToTopButton";
 import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/src/styles.css";
 
-// ✅ Background importé proprement
+// ✅ Background
 import backgroundUnivers from "../img/Background/backgroundunivers.png";
+
+// ✅ Images Others
+import grayMountain from "../img/Others/grayMountain.jpg";
+import paysageBretonnie from "../img/Others/PaysageBretonnie.jpg";
+import background7 from "../img/Others/Background7.png";
+import background2 from "../img/Others/Background2.png";
+import banniere1 from "../img/Others/Banniere1.png";
+import taxe from "../img/Others/taxe.jpg";
+
+// ✅ Maps
+import oldWorldMap from "../img/Maps/OldWorldMap.jpg";
+import empireMap from "../img/Maps/EmpireMap.png";
+import reiklandMap from "../img/Maps/ReiklandMap.png";
+import ducheUbersreikMap from "../img/Maps/DuchéUbersreikMap.png";
+import ubersreikMap from "../img/Maps/UbersreikMap.jpg";
 
 export const Universe = () => {
 
@@ -64,8 +78,8 @@ export const Universe = () => {
 
 				<div className="no-hover-zoom">
   <InnerImageZoom
-    src="/src/assets/img/Maps/OldWorldMap.jpg"
-    zoomSrc="/src/assets/img/Maps/OldWorldMap.jpg"
+    src={oldWorldMap}
+    zoomSrc={oldWorldMap}
     zoomType="click"
     zoomScale={1.5}
     zoomPreload={true}
@@ -108,7 +122,7 @@ export const Universe = () => {
 						passée.
 					</p>
 
-					<img src="/src/assets/img/Others/grayMountain.jpg" alt="Montagnes" />
+					<img src={grayMountain} alt="Montagnes" />
 				</section>
 			</section>
 
@@ -129,8 +143,8 @@ export const Universe = () => {
 
 				<div className="no-hover-zoom">
   <InnerImageZoom
-    src="/src/assets/img/Maps//EmpireMap.png"
-    zoomSrc="/src/assets/img/Maps/EmpireMap.png"
+    src={empireMap}
+    zoomSrc={empireMap}
     zoomType="click"
     zoomScale={1.5}
     zoomPreload={true}
@@ -170,7 +184,7 @@ export const Universe = () => {
 					comme intérieures.
 				</p>
 
-				<img src={taxe} alt="Pieces d'or" />
+				<img src={taxe} alt="Pièces d'or" />
 				</section>
 
 			</section>
@@ -193,8 +207,8 @@ export const Universe = () => {
 
 				<div className="no-hover-zoom">
   <InnerImageZoom
-    src="/src/assets/img/Maps/ReiklandMap.png"
-    zoomSrc="/src/assets/img/Maps/ReiklandMap.png"
+    src={reiklandMap}
+    zoomSrc={reiklandMap}
     zoomType="click"
     zoomScale={1.5}
     zoomPreload={true}
@@ -234,7 +248,7 @@ export const Universe = () => {
 
 				<img
 					className="Reikland-5"
-					src="/src/assets/img/Others/PaysageBretonnie.jpg"
+					src={paysageBretonnie}
 					alt="Paysage de Bretonnie"
 				/>
 			</section>
@@ -252,8 +266,8 @@ export const Universe = () => {
 
 				<div className="no-hover-zoom">
   <InnerImageZoom
-    src="/src/assets/img/Maps/DuchéUbersreikMap.png"
-    zoomSrc="/src/assets/img/Maps/DuchéUbersreikMap.png"
+    src={ducheUbersreikMap}
+    zoomSrc={ducheUbersreikMap}
     zoomType="click"
     zoomScale={1.0}
     zoomPreload={true}
@@ -286,7 +300,7 @@ export const Universe = () => {
 					accident à abattre, ou d’un concurrent trop présent à “refroidir”.
 				</p>
 
-				<img src="/src/assets/img/Others/Background 7.png" alt="Auberge" className="Duché-Ubersreik-5" />
+				<img src={background7} alt="Auberge" className="Duché-Ubersreik-5" />
 
 			</section>
 			<section className="Ubersreik" >
@@ -302,8 +316,8 @@ export const Universe = () => {
 
 				<div className="no-hover-zoom">
   <InnerImageZoom
-    src="/src/assets/img/Maps/UbersreikMap.jpg"
-    zoomSrc="/src/assets/img/Maps/UbersreikMap.jpg"
+    src={ubersreikMap}
+    zoomSrc={ubersreikMap}
     zoomType="click"
     zoomScale={0.8}
     zoomPreload={true}
@@ -334,7 +348,7 @@ export const Universe = () => {
 					suffit de les dénoncer comme partisans de l’ancien régime…
 				</p>
 
-				<img src="/src/assets/img/Others/Background2.png" alt="Delation en action" className="Ubersreik-5" />
+				<img src={background2} alt="Delation en action" className="Ubersreik-5" />
 
 			</section>
 
@@ -380,7 +394,7 @@ export const Universe = () => {
 
 				<img
 					className="Conclusion-4"
-					src="/src/assets/img/Others/Banniere1.png"
+					src={banniere1}
 					alt="Rue d'Ubersreik "
 				/>
 			</section>
