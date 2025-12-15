@@ -1,18 +1,37 @@
-import "./UniversrPage.css";
+import { useEffect } from "react";
+import "./UniversePage.css";
+
 import taxe from "./../img/Others/taxe.jpg";
 import StickyToc from "../components/Navigation/StickyToc";
 import ScrollToTopButton from "../components/Navigation/ScrollToTopButton";
-import InnerImageZoom from 'react-inner-image-zoom';
+import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/src/styles.css";
 
-
+// ✅ Background importé proprement
+import backgroundUnivers from "../img/background/backgroundunivers.png";
 
 export const Universe = () => {
 
+  // ✅ Applique le background au body (header + footer inclus)
+  useEffect(() => {
+    document.body.style.backgroundImage = `url(${backgroundUnivers})`;
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundAttachment = "fixed";
 
-	return (
+    // ✅ Nettoyage quand on quitte la page
+    return () => {
+      document.body.style.backgroundImage = "";
+      document.body.style.backgroundSize = "";
+      document.body.style.backgroundPosition = "";
+      document.body.style.backgroundRepeat = "";
+      document.body.style.backgroundAttachment = "";
+    };
+  }, []);
 
-		 <>
+  return (
+    <>
       <StickyToc
         items={[
           { id: "vieuxmonde", label: "Vieux-monde" },
@@ -23,7 +42,7 @@ export const Universe = () => {
         ]}
       />
 
-		<div className="univers-page">
+      <div className="univers-page">
 			<section className="vieux-monde" >
 				<h2 id="vieuxmonde"> Le vieux monde de warhammer </h2>
 

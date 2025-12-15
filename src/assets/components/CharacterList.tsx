@@ -14,8 +14,14 @@ type Props = {
 const CharacterList = ({ CharacterPairs }: Props) => {
   return (
     <div className="Gallery">
-      {CharacterPairs.map((pair, index) => (
-        <CharacterCard key={index} front={pair.front} back={pair.back} isFlipped={false} onFlip={() => {}} />
+      {CharacterPairs.map((pair) => (
+        <CharacterCard
+          key={pair.front.id}   // ✅ clé unique et stable
+          front={pair.front}
+          back={pair.back}
+          isFlipped={false}
+          onFlip={() => {}}
+        />
       ))}
     </div>
   );

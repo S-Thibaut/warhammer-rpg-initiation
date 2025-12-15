@@ -1,15 +1,14 @@
-export type Character = 
-    {
-        id: number;
-        Nom: string;
-        Prénom: string;
-        Race: string;
-        Classe: string;
-        Carriere: string;
-        Image: string;
-        Background: string; 
-        Arme: string;
-        Style: string;
+export type Character = {
+  id: number;
+  Nom: string;
+  Prénom: string;
+  Race: string;
+  Classe: string;
+  Carriere: string;
+  Image: string;
+  Background: string;
+  Arme: string;
+  Style: string;
 };
 
 import SalundraPortrait from "../img/Characteres/Portrait Salundra.png"
@@ -45,7 +44,7 @@ import BackgroundJoueurs from "../img/Background//Background Joueurs.png"
 
 
 
-const Characters = [ 
+export const characters: Character[] = [
     {
         id:0,
         Nom:"???",
@@ -216,4 +215,3 @@ const Characters = [
     },
 ] 
 
-export default Characters
