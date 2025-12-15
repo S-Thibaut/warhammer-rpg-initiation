@@ -10,7 +10,7 @@ import OrcGobelin from "../img/Others/OrcGobelin.jpg";
 import Undead from "../img/Others/Undead.jpg";
 import Chaos from "../img/Others/Chaos.jpg";
 import Skaven from "../img/Others/Skaven.jpg";
-import BackGround12 from "../img/others/Background12.png"
+import BackGround12 from "../img/Others/Background12.png"
 import StickyToc from "../components/Navigation/StickyToc";
 import ScrollToTopButton from "../components/Navigation/ScrollToTopButton";
 
